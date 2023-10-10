@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" type="image/svg" href="images/favicon.png">
+    <link rel="stylesheet" href="forForms.css">
+</head>
+<body>
+    <div class="contact-form-container">
+        <h1>Зворотній зв'язок</h1>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="button-container">
+                <a class="reset-button dynamic-button">Відправити</a>
+                <a href="index.html" class="reset-button dynamic-button">Скасувати</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

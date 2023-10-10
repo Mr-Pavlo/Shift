@@ -1,0 +1,129 @@
+/* Стилі для контейнера сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Мінімальна висота вікна браузера */
+}
+
+/* Стилі для контейнера сторінки */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1; /* Розтягнути контейнер, щоб заповнити вільний простір між заголовком і футером */
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Стилі для контейнера футера */
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Додаткові стилі для іконок соціальних мереж */
+#footer-right a {
+    margin-top: 5px; /* Змініть відстань між іконками і текстом */
+}
+
+#footer-left, #footer-right {
+    flex: 1;
+}
+#footer-center {
+    flex: 2;
+    text-align: center;
+}
+
+.menu-item {
+    font-family: 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.place {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px; /* Звуження блоку зліва на 50px */
+    margin-right: 200px; /* Звуження блоку праворуч на 50px */
+}
+
+.place h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.place p {
+    font-size: 16px;
+}
+
+.place:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+.place {
+    /* Ваші існуючі стилі для блоку "Місце" */
+
+    position: relative; /* Позиціонування відносно блока "Місце" */
+}
+
+.reserve-button {
+    position: absolute; /* Позиціонування відносно батьківського блоку "Місце" */
+    bottom: 10px; /* Відстань від нижнього краю блока "Місце" */
+    right: 10px; /* Відстань від правого краю блока "Місце" */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.reserve-button:hover {
+    background-color: #0056b3;
+}

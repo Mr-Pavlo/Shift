@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Reservation</title>
+    <link rel="shortcut icon" type="image/svg" href="images/favicon.png">
+    <link rel="stylesheet" href="forFormReserv.css">
+</head>
+<body>
+    <div class="contact-form-container">
+        <h1>Бронювання</h1>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="place">Місце:</label>
+                <select id="place" name="place">
+                    <option value="Місце 1" style="font-family: 'Comfortaa', sans-serif;">Місце 1</option>
+                    <option value="Місце 2" style="font-family: 'Comfortaa', sans-serif;">Місце 2</option>
+                    <option value="Місце 3" style="font-family: 'Comfortaa', sans-serif;">Місце 3</option>
+                    <option value="Місце 3" style="font-family: 'Comfortaa', sans-serif;">Місце 4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Коментар:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="button-container">
+                <a class="reset-button dynamic-button">Відправити</a>
+                <a href="Reservation.html" class="reset-button dynamic-button">Скасувати</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
