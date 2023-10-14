@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covork Shift</title>
+    <link rel="shortcut icon" type="image/svg" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="#about">Про нас</a></li>
+                <li class="menu-item"><a href="#services">Послуги</a></li>
+                <li class="menu-item"><a href="#contact">Контакти</a></li>
+                <li class="menu-item"><a href="Reservation.html">Бронювання</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Коворк "Shift"</h1>
+            <p class="hero-description">Ми створюємо робоче середовище для вашого успіху.</p>
+            <a href="Form.html" class="cta-button">Зв'яжіться з нами</a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2 style="font-family: 'Comfortaa', sans-serif;" class="center">ПРО НАС</h2>
+        <div id="footer-center">
+            <p style="font-family: 'Comfortaa', sans-serif;" class="animate">Коворк "Shift" - це ідеальне місце для креативних професіоналів та стартапів. Ми надаємо сучасне робоче середовище, де ви можете концентруватися на своїх завданнях та зустрічати цікавих людей.</p>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" style="text-align: center;">
+        <h2 style="font-family: 'Comfortaa', sans-serif; text-transform: uppercase;" class="text-transform-uppercase">ПОСЛУГИ</h2>
+        <div class="service" style="border: 2px solid #333; padding: 20px; margin: 20px auto; max-width: 600px;">
+            <div class="service-icon">
+                <img src="images/work.png" alt="Зручні робочі місця">
+            </div>
+            <div class="service-info" style="font-family: 'Comfortaa', sans-serif; text-transform: uppercase;">
+                <h3>Зручні робочі місця</h3>
+                <p>Наші робочі місця створені для вашої продуктивності та комфорту. Доступні різні варіанти розміщення та облаштування.</p>
+            </div>
+        </div>
+        <div class="service" style="border: 2px solid #333; padding: 20px; margin: 20px auto; max-width: 600px;">
+            <div class="service-icon-two">
+                <img src="images/internet.png" alt="Швидкий інтернет">
+            </div>
+            <div class="service-info" style="font-family: 'Comfortaa', sans-serif; text-transform: uppercase;">
+                <h3>Швидкий інтернет</h3>
+                <p>Ми пропонуємо надійний та швидкий Інтернет, щоб ви завжди були підключені та продуктивні.</p>
+            </div>
+        </div>
+        <div class="service" style="border: 2px solid #333; padding: 20px; margin: 20px auto; max-width: 600px;">
+            <div class="service-icon-cofee">
+                <img src="images/coffe.png" alt="Кава та перекуси">
+            </div>
+            <div class="service-info" style="font-family: 'Comfortaa', sans-serif; text-transform: uppercase;">
+                <h3>Кава та перекуси</h3>
+                <p>У нас ви зможете насолоджуватися кавою та смачними перекусами, щоб зарядитися енергією на весь робочий день.</p>
+            </div>
+        </div>
+        <div class="service" style="border: 2px solid #333; padding: 20px; margin: 20px auto; max-width: 600px;">
+            <div class="service-icon-two">
+                <img src="images/events.png" alt="Організація подій та майстер-класів">
+            </div>
+            <div class="service-info" style="font-family: 'Comfortaa', sans-serif; text-transform: uppercase;">
+                <h3>Організація подій та майстер-класів</h3>
+                <p>Ми регулярно організовуємо події, семінари та майстер-класи, де ви можете навчатися та обмінюватися досвідом.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div id="footer-container">
+            <div id="footer-left">
+                <h2 id="contact">Контакти:</h2>
+                <p>Телефон: <a href="tel:+380123456789">+380-123-456-789</a></p>
+                <p>Email: <a href="mailto:info@shiftcoworking.com">info@shiftcoworking.com</a></p>
+            </div>
+            <div id="footer-center">
+                <footer>
+                    <p>&copy; 2023 Coworking "Shift"</p>
+                </footer>
+            </div>
+            <div id="footer-right">
+                <p style="margin-bottom: 5px;">Автор: PM-DE✅</p>
+                <a href="https://instagram.com/_2_pablo_2_?igshid=MWZjMTM2ODFkZg=="><img src="images/instagram.png" alt="Instagram" width="46" height="46"></a>
+                <a href="https://t.me/pablo_2_1"><img src="images/telegram.png" alt="Telegram" width="47" height="47"></a>
+                <a href="https://github.com/PavloVolodymyrovych"><img src="images/github.png" alt="GitHub" width="50" height="50"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Отримати всі посилання у хедері
+        const headerLinks = document.querySelectorAll(".menu-item a");
+        // Додати обробник подій для посилань у хедері
+        headerLinks.forEach(link => {
+            link.addEventListener("click", (event) => {
+            // Перевірити, чи клікнуто на кнопку "Бронювання"
+            if (link.getAttribute("href") === "Reservation.html") {
+                return; // Повернути, якщо це посилання на "Бронювання"
+            }
+            event.preventDefault(); // Заборонити звичайну поведінку посилання
+            const targetId = link.getAttribute("href").slice(1); // Отримати ідентифікатор цільового елементу
+            scrollToElement(targetId); // Викликати функцію скролінгу
+            });
+        });
+        // Функція для плавного скролінгу до вказаного елементу
+        function scrollToElement(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</body>
+</html>
